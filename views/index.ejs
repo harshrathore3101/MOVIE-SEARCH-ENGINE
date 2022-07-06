@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../stylesheets/nav.css" />
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+  </head>
+  <body>
+    <nav>
+      <span>
+        <a href="/allmovie" id="button">All Movie</a>
+        <a href="/create" id="button">Create New Movie</a>
+      </span>
+      <h1 id="head">MOVIE SEARCH ENGINE</h1>
+      <div id="dropdown">
+        <input id="in" type="text" style="width: 90%" placeholder="Search a movie" />
+        <div id="result">
+          <% data.forEach(function(val){ %>
+
+          <% }) %>
+
+          <!-- <div class="elm">
+          </div> -->
+          <ac></ac>
+        </div>
+      </div>
+    </nav>
+    <div id="main">
+      <div id="box">
+        <h1>ALL MOVIE</h1>
+        <div id="movies">
+          <% data.forEach(function(val){ %>
+          <div class="row">
+            <a href="/read/<%= val._id %>"><%= val.name %></a>
+            <a href="/delete/<%= val._id %>"><i class="ri-close-circle-line"></i></a>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../javascripts/script.js"></script>
+  </body>
+</html>

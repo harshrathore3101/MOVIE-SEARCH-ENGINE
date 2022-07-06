@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/nav.css" />
+    <link rel="stylesheet" href="../stylesheets/create.css" />
+  </head>
+  <body>
+    <nav>
+      <span>
+        <a href="/allmovie" id="button">All Movie</a>
+        <a href="/create" id="button">Create New Movie</a>
+      </span>
+      <h1 id="head">MOVIE SEARCH ENGINE</h1>
+      <div id="dropdown">
+        <input id="in" type="text" style="width: 90%" placeholder="Search a movie" />
+        <div id="result">
+          <!-- <div class="elm">
+            <a href="#"> hey </a>
+          </div> -->
+        </div>
+      </div>
+    </nav>
+    <div id="main">
+      <div id="box">
+        <h1>Update YOUR MOVIE</h1>
+        <form action="/update/<%= data._id %>" method="post">
+          <input type="text" name="name" placeholder="Movie Name" value="<%= data.name %>"" />
+          <input type="number" name="rate" placeholder="Movie rating" value="<%= data.rate %>"/>
+          <input type="text" name="des" placeholder="Movie Description" value="<%= data.des %>"/>
+          <input type="time" name="time" value="<%= data.time %>"/>
+          <input type="submit" value="Update Movie" />
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../javascripts/script.js"></script>
+  </body>
+</html>

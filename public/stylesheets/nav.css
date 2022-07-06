@@ -1,0 +1,79 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "gilroy";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+nav {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* background-color: aqua; */
+  background-color: gray;
+}
+
+nav span{
+  margin-top: 15px;
+}
+
+nav #head {
+  font-family: "gilroy";
+  font-size: 40px;
+  font-weight: 600;
+}
+
+nav #button {
+  height: 25px;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: rgb(67, 67, 205);
+  color: #fff;
+  font-size: 15px;
+}
+
+nav #dropdown {
+  /* display: inline; */
+  width: 250px;
+  position: relative;
+}
+
+#dropdown input {
+  padding: 5px 10px;
+  /* font-size: 12px; */
+}
+
+#dropdown #result {
+  width: 100%;
+  max-height: 200px;
+  overflow: auto;
+  position: absolute;
+  left: 0%;
+}
+
+#result .elm {
+  background-color: rgb(183, 183, 183);
+  z-index: 999;
+  border-bottom: 1px solid black;
+  /* width: 100%; */
+  height: 40px;
+  /* padding-left: 10px;
+  padding-top: 5px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.elm a{
+ text-decoration: none;
+ color: black;
+}
+

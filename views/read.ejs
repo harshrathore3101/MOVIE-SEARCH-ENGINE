@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/nav.css" />
+    <link rel="stylesheet" href="../stylesheets/read.css" />
+  </head>
+  <body>
+    <nav>
+      <span>
+        <a href="/allmovie" id="button">All Movie</a>
+        <a href="/create" id="button">Create New Movie</a>
+      </span>
+      <h1 id="head">MOVIE SEARCH ENGINE</h1>
+      <div id="dropdown">
+        <input id="in" type="text" style="width: 90%" placeholder="Search a movie" />
+        <div id="result">
+          <!-- <div class="elm">
+            <a href=""> hey </a>
+          </div> -->
+        </div>
+      </div>
+    </nav>
+    <div id="main">
+      <div id="box">
+        <h1>MOVIE DETAILS</h1>
+        <div id="details">
+          <h3>Name : <span><%= data.name %></span></h3>
+          <h3>Rating : <span><%= data.rate %></span></h3>
+          <h3>Description : <span><%= data.des %></span></h3>
+          <h3>Duration : <span><%= data.time %></span></h3>
+          <div id="but">
+            <a href="/update/<%= data._id %>">Update</a>
+            <a href="/delete/<%= data._id %>" id="del"
+              >Delete<i class="ri-close-circle-line"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../javascripts/script.js"></script>
+  </body>
+</html>
